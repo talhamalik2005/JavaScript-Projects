@@ -1,0 +1,917 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+   
+    color: white;
+}
+ body{
+        background-color: black;
+        width: 100%;
+    }
+body{
+    overflow: hidden !important;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+   
+}
+.sidebar{
+    overflow: hidden;
+    width: 23%;
+    border-radius: 1rem;
+    margin: 2px;
+}
+.main-content{
+    height: auto;
+    margin-top: .5rem;
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+   margin-bottom: 3rem;
+    
+}
+.music-player{
+
+    position: fixed;
+    bottom: 0px;
+    background-color: black;
+    width: 100%;
+    height: 72px;
+}
+   div .navopt a{
+        text-decoration: none;
+    }
+  .nav{
+        background-color: #121212;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        height: 150px;
+        margin: 0.5rem  0.50rem;
+        border-radius: 1rem;
+    }
+.navopt{
+    line-height: 2.5rem;            
+    margin-left:1rem ;
+
+}
+.navopt i{
+font-size: 1.25rem;
+
+}
+.navopt a {
+    
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-left: 1rem;
+}
+
+div.search{
+    opacity: 0.3; 
+    transition: 1s;
+}
+div.search:hover{
+    opacity: 1; 
+}
+.navopt img{
+    height: 2.50rem;
+    width: auto;
+}
+
+.library
+{
+    background-color: #121212;             
+        height: 100%;
+        margin: 0.1rem  0.50rem;
+        border-radius: 1rem;
+        
+}
+.box{
+
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    opacity: .3;
+    transition: 1s;
+}
+.box:hover
+{
+    opacity: 1;
+}
+
+.box img
+{margin-top: 1.5rem;
+    height:  2.50rem;
+    width: auto;         
+
+}
+
+
+.option
+{
+    
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-left: 1rem;
+    position: relative;
+}
+.box a{
+    margin-top: 1.5rem;
+    
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 1rem;
+    text-decoration: none;
+   
+}
+
+.box .icon{
+    margin: 1rem 1rem;
+    align-items: baseline;
+    position: relative;
+    left: 7rem;
+   
+    
+}
+.lbox
+{
+    height: 100px;
+    width: auto;
+    margin: 1rem .1rem;
+    background-color: #121212;
+    border-radius: .8rem;
+    overflow: hidden;
+}
+.lbox:hover
+{
+    overflow: auto;
+}
+
+.lbox .box1
+{
+   
+    height: 130px;
+    background-color: rgb(36, 36, 35);
+    width: auto;
+    border-radius: .5rem;
+    padding: 1rem;
+    line-height: 40px;
+}
+.lbox .box1 p{
+    font-weight: bolder;
+    margin-bottom: 1rem;
+}
+
+
+.lbox .box1 a
+{
+  
+    margin-top: 1rem;
+    height: 100px;
+    color: rgb(36, 36, 35);
+    width: 75%;
+    height: 25px;
+    padding:10px 30px;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    background-color: white;
+    font-weight: bold;
+}
+
+.lbox .box2
+{
+    margin-top:1rem; ;
+    height: 300px;
+    background-color: rgb(36, 36, 35);
+    width: auto;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    line-height: 40px;
+}
+
+.lbox .box2
+{
+   
+    height: 170px;
+    background-color: rgb(36, 36, 35);
+    width: auto;
+    border-radius: .5rem;
+    padding: 1rem;
+    line-height: 25px;
+}
+.lbox .box2 p{
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.lbox .box2 a
+{
+  
+    margin-top: 1rem;
+    height: 100px;
+    color: rgb(36, 36, 35);
+    width: 75%;
+    height: 25px;
+    padding:10px 30px;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    background-color: white;
+    font-weight: bold;
+}
+
+div.final{
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    line-height: 2rem;
+}
+
+div.final a{
+    font-size: 14px;
+    
+    text-decoration: none;
+    padding-right: 1.2rem;
+}
+.final .cookies:hover
+{
+    text-decoration: underline;
+}
+
+div .english
+{
+    
+    height: 40px;
+    width: 145px;
+    border: 1.5px solid white;
+    border-radius: 25px;
+    font-weight: 700;
+}
+.english:hover
+{
+    font-weight: 850;
+    border: 2.5px solid white;
+}
+
+.english img{
+    height: 20px;
+    width: 20px;
+    margin-top: .25rem;
+    margin-left: 1rem;
+}
+.english a{            
+    text-decoration: none;
+    text-align: center;
+    margin:1rem;
+}
+.english .web
+{
+    position: relative;
+    left: 1rem;
+    top: .3rem;
+}
+.stick{
+    position: sticky;
+}
+.sticky-nav{ 
+    height: 70px;
+    width: auto;
+    background-color: #121212;
+    position: relative;
+    padding: 0px 16px;
+    display: flex;
+    
+}
+.sticky-nav img{
+    margin-top: 15px;
+    margin-left: 10px;
+    padding: 10px 10px;
+    height: 16px;
+    width: 16px;
+    background-color: black;
+    border-radius:50%;
+}
+ .sticky-nav .signup
+{
+    width: auto;
+    margin-top: 22px;
+    margin-left: 72%;
+    margin-bottom: 17px;
+    margin-right: 30px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 19px;
+    opacity: 0.7;
+}
+.sticky-nav .signup:hover
+{
+    opacity: 1;
+}
+.sticky-nav .login
+{
+    height: auto;
+    width: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-bottom: 7px;
+    margin-left: 10px;
+    background-color: White;
+    color: #121212;
+    font-weight: bolder;
+    font-size: 18px;
+    padding: 0px 30px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.sticky-nav .login:hover
+{
+    font-size: 20px;
+    transform: scale(2px);
+}
+
+
+div .popart
+{
+display: flex;
+color: white;
+margin: 2rem .5rem 1rem 1.5rem;
+align-items: end;
+
+}
+.popart h1:hover{
+text-decoration: underline;
+}
+
+.popart p{
+margin-left: 75%;  
+font-weight: bolder;
+opacity: .7;
+}
+.popart p:hover{
+text-decoration: underline;
+}
+
+.artist
+{
+display: flex;
+justify-content: space-around;
+}
+.artist img
+{
+height: 180px;
+width: 180px;
+border-radius: 50%;
+}
+.artist h3
+{
+margin: .5rem;
+}
+.artist p {
+margin-left: .5rem;
+}
+.video
+{
+position:relative;
+top: 10rem;  
+left: 6.5rem;  
+transition: 0.5s;
+opacity: 0;
+}
+.video:hover
+{
+opacity: 1;
+}
+
+
+/*-------popular artist hover effect----*/
+.pritam{
+transition: 0.5rem;
+padding: .9rem;
+}
+.pritam:hover
+{ 
+background-color: #292828;
+border-radius: 15px;
+}
+.arijit
+{
+transition: 0.5rem;
+padding: .9rem;
+}
+.arijit:hover
+{ 
+background-color: #292828;
+border-radius: 15px;
+}
+.karan{
+transition: 0.5rem;
+padding: .9rem;
+}
+.karan:hover
+{
+background-color: #292828;
+border-radius: 15px;
+}
+.Sbubh{
+transition: 0.5rem;
+padding: .9rem;
+}
+.Sbubh:hover
+{
+background-color: #292828;
+border-radius: 15px;
+}
+.Atif
+{
+transition: 0.5rem;
+padding: .9rem;
+}
+.Atif:hover
+{
+background-color: #292828;
+border-radius: 15px;
+}
+.diljit
+{
+transition: 0.5rem;
+padding: .9rem;
+}
+.diljit:hover{
+background-color: #292828;
+border-radius: 15px;
+}
+
+
+
+/*-------Popular Album----*/
+
+.album{
+margin-top: 1rem;
+display: flex;
+justify-content: space-around;
+}
+.album img
+{
+height: 180px;
+width: 180px;
+border-radius: 5px;
+}
+.album h3
+{
+margin: .5rem;
+}
+.album p {
+margin-left: .5rem;
+}
+/*-----------------------------*/
+.album1{
+margin-top: 1rem;
+display: flex;
+justify-content: space-around;
+}
+.album1 img
+{
+height: 180px;
+width: 180px;
+border-radius: 5px;
+}
+.album1 h3
+{
+margin: .5rem;
+}
+.album1 p {
+margin-left: .5rem;
+}
+/*-----------------------------*/
+.album2{
+margin-top: 1rem;
+display: flex;
+justify-content: space-around;
+}
+.album2 img
+{
+height: 180px;
+width: 180px;
+border-radius: 5px;
+}
+.album2 h3
+{
+margin: .5rem;
+}
+.album2 p {
+margin-left: .5rem;
+}
+
+
+/*-------Popular Album Hover----*/
+.rockstar{
+transition: 0.5rem;
+padding: .9rem;
+}
+.rockstar:hover
+{ 
+background-color: #292828;
+border-radius: 15px;
+}
+.still
+{
+transition: 0.5rem;
+padding: .9rem;
+}
+.still:hover
+{ 
+background-color: #292828;
+border-radius: 15px;
+}
+.making{
+transition: 0.5rem;
+padding: .9rem;
+}
+.making:hover
+{
+background-color: #292828;
+border-radius: 15px;
+}
+.moosetape{
+transition: 0.5rem;
+padding: .9rem;
+}
+.moosetape:hover
+{
+background-color: #292828;
+border-radius: 15px;
+}
+.Jhol
+{
+transition: 0.5rem;
+padding: .9rem;
+}
+.Jhol:hover
+{
+background-color: #292828;
+border-radius: 15px;
+}
+.love
+{
+transition: 0.5rem;
+padding: .9rem;
+}
+.love:hover{
+background-color: #292828;
+border-radius: 15px;
+}
+
+
+.popalb
+{
+display: flex;
+color: white;
+margin: 2rem .5rem 1rem 1.5rem;
+align-items: end;
+
+}
+.popalb h1:hover{
+text-decoration: underline;
+}
+.popalb p{
+margin-left: 72%;  
+font-weight: bolder;
+opacity: .7;
+}
+.popalb p:hover{
+text-decoration: underline;
+}
+
+/*----------- Popular Radio  ----------*/
+.popr {
+margin-top: 1rem;
+display: flex;
+justify-content: space-around;
+}
+.popr img
+{
+height: 180px;
+width: 180px;
+border-radius: 5px;
+}
+.popr h3
+{
+margin: .5rem;
+}
+.popr p {
+margin-left: .5rem;
+}
+/*----------- Popular Radio Hover  ----------*/
+.arijitr{
+transition: 0.5rem;
+padding: .9rem;
+}
+.arijitr:hover
+{ 
+background-color: #292828;
+border-radius: 15px;
+}
+.kaifir
+{
+transition: 0.5rem;
+padding: .9rem;
+}
+.kaifir:hover
+{ 
+background-color: #292828;
+border-radius: 15px;
+}
+.nusratr{
+transition: 0.5rem;
+padding: .9rem;
+}
+.nusratr:hover
+{
+background-color: #292828;
+border-radius: 15px;
+}
+.shubhr{
+transition: 0.5rem;
+padding: .9rem;
+}
+.shubhr:hover
+{
+background-color: #292828;
+border-radius: 15px;
+}
+.talhar
+{
+transition: 0.5rem;
+padding: .9rem;
+}
+.talhar:hover
+{
+background-color: #292828;
+border-radius: 15px;
+}
+.sidhur
+{
+transition: 0.5rem;
+padding: .9rem;
+}
+.sidhur:hover{
+background-color: #292828;
+border-radius: 15px;
+}
+.popr
+{
+display: flex;
+color: white;
+margin: 2rem .5rem 1rem 1.5rem;
+align-items: end;
+
+}
+.popr h1:hover{
+text-decoration: underline;
+}
+.popr p{
+margin-left: 72%;  
+font-weight: bolder;
+opacity: .7;
+}
+.popr p:hover{
+text-decoration: underline;
+}
+
+/*----------- Featured Charts  ----------*/
+.Feac {
+margin-top: 1rem;
+display: flex;
+justify-content: space-around;
+}
+.Feac img
+{
+height: 180px;
+width: 180px;
+border-radius: 5px;
+}
+.Feac h3
+{
+margin: .5rem;
+}
+.Feac p {
+margin-left: .5rem;
+}
+/*----------- Popular Radio Hover  ----------*/
+.top1{
+transition: 0.5rem;
+padding: .9rem;
+}
+.top1:hover
+{ 
+background-color: #292828;
+border-radius: 15px;
+}
+.top2
+{
+transition: 0.5rem;
+padding: .9rem;
+}
+.top2:hover
+{ 
+background-color: #292828;
+border-radius: 15px;
+}
+.top3{
+transition: 0.5rem;
+padding: .9rem;
+}
+.top3:hover
+{
+background-color: #292828;
+border-radius: 15px;
+}
+.top4{
+transition: 0.5rem;
+padding: .9rem;
+}
+.top4:hover
+{
+background-color: #292828;
+border-radius: 15px;
+}
+.top5
+{
+transition: 0.5rem;
+padding: .9rem;
+}
+.top5:hover
+{
+background-color: #292828;
+border-radius: 15px;
+}
+.top6
+{
+transition: 0.5rem;
+padding: .9rem;
+}
+.top6:hover{
+background-color: #292828;
+border-radius: 15px;
+}
+.Feac
+{
+display: flex;
+color: white;
+margin: 2rem .5rem 1rem 1.5rem;
+align-items: end;
+
+}
+.Feac h1:hover{
+text-decoration: underline;
+}
+.Feac p{
+margin-left: 72%;  
+font-weight: bolder;
+opacity: .7;
+}
+.Feac p:hover{
+text-decoration: underline;
+}
+
+/*-------HR line -----*/
+.hr{
+margin-top: 5rem;
+margin-left: 4rem;
+height: 3rem;
+width: 90%;
+
+}
+hr{
+font-weight: lighter;
+font-size: 10px;
+font-weight: 10px;
+opacity: .5;
+}
+.other{
+height: 170px;
+width: 100%;
+background-color: #121212;
+display: flex;
+flex-direction: row;
+padding: 4rem 0rem 0rem .25rem;
+}
+.other h3{
+margin-left: 4rem;
+}
+.other .p{
+margin-left: 4rem;
+line-height: 1rem;
+padding-top: 1rem;
+font-size: 20px;
+cursor: pointer;
+opacity: .7;
+
+}
+.other .p:hover{
+opacity: 1;
+text-decoration: underline;
+}
+
+div.Inst
+{
+margin: 0rem 1.5rem 0rem 7rem ;
+height: 40px;
+width:  40px;
+background-color: rgb(77, 76, 75);
+position: relative;
+border-radius: 50%;
+}
+div.Inst:hover
+{
+background-color: rgb(138, 138, 127);
+}
+
+div.Inst i {
+position: absolute;
+font-size: 1.5rem;
+text-align: center;
+left: .52rem;
+top: .45rem;
+
+}
+
+div.twit
+{
+height: 40px;
+width:  40px;
+background-color: rgb(77, 76, 75);
+position: relative;
+border-radius: 50%;
+}
+div.twit i {
+position: absolute;
+font-size: 1.5rem;
+text-align: center;
+left: .52rem;
+top: .45rem;
+
+}
+div.twit:hover
+{
+background-color: rgb(138, 138, 127);
+}
+
+
+div.face
+{   margin: 0rem 1.5rem;
+height: 40px;
+width:  40px;
+background-color: rgb(77, 76, 75);
+position: relative;
+border-radius: 50%;
+}
+div.face:hover
+{
+background-color: rgb(138, 138, 127);
+}
+div.face i {
+position: absolute;
+font-size: 1.5rem;
+text-align: center;
+left: .52rem;
+top: .45rem;
+
+}
+
+div .fin {
+margin-top: 1rem;
+margin-left: 70px;
+height: 100px;
+width: 100%;
+background-color: #121212;
+}
+
+div .fin p{
+font-size: 18px;
+color: rgb(172, 169, 169);
+}
+/***********************************/
+div.music-player{
+display: flex;
+}
+.music-player .pic
+{
+width: 25%;
+}
+
+.music-player .player
+{
+width: 50%;
+}
+.music-player .control
+{
+width: 25%;
+}
